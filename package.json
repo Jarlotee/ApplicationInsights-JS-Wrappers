@@ -1,0 +1,30 @@
+{
+  "name": "insightjs",
+  "version": "0.1.0",
+  "description": "Universal error trapping and log handling for javascript",
+  "directories": {
+    "test": "test",
+    "dist": "dist"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "errors",
+    "logging",
+    "dashboard",
+    "application insights",
+    "azure"
+  ],
+  "author": "Jarlotee",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.8.1",
+    "gulp-watch": "^4.3.5",
+    "typescript": "^1.5.3"
+  }
+}
