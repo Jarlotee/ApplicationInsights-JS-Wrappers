@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es5",
+    "outDir": "../js"
+  }
+}

@@ -1,3 +1,0 @@
-module Insight.Listeners {
-	//TODO
-}

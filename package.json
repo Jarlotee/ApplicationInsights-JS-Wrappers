@@ -1,12 +1,15 @@
 {
   "name": "insightjs",
   "version": "0.1.0",
+  "main": "src/js/index.js",
   "description": "Universal error trapping and log handling for javascript",
   "directories": {
     "test": "test",
     "dist": "dist"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node test --verbose"
+  },
   "repository": {
     "type": "git",
     "url": "none"
@@ -22,9 +25,16 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "del": "^1.2.1",
     "gulp": "^3.9.0",
+    "gulp-tslint": "^3.2.0",
     "gulp-typescript": "^2.8.1",
     "gulp-watch": "^4.3.5",
+    "jasmine-node": "^1.14.5",
+    "merge2": "^0.3.6",
     "typescript": "^1.5.3"
-  }
+  },
+  "files": [
+    "src/js"
+  ]
 }

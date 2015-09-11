@@ -1,4 +1,3 @@
-1. App Insight Listener
-1. Test test test
-1. Function wrapper
-1. require js able
+1. Break out IListeners into thier own packages
+1. Test test test (unit test)
+1. intellisense-able
