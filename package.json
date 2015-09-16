@@ -1,22 +1,21 @@
 {
-  "name": "insightjs",
+  "name": "ApplicationInsights-JS-Wrappers",
   "version": "0.1.0",
-  "main": "src/js/index.js",
-  "description": "Universal error trapping and log handling for javascript",
+  "main": "dist/index.js",
+  "description": "window.onerror, console and functions wrappers for ApplicationInsights-JS",
   "directories": {
-    "test": "test",
     "dist": "dist"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/jasmine-node test --verbose"
   },
   "repository": {
     "type": "git",
-    "url": "none"
+    "url": "https://github.com/Jarlotee/ApplicationInsights-JS-Wrappers"
   },
   "keywords": [
     "errors",
     "logging",
+    "wrap",
+    "wrapping",
+    "console",
     "dashboard",
     "application insights",
     "azure"
@@ -30,11 +29,10 @@
     "gulp-tslint": "^3.2.0",
     "gulp-typescript": "^2.8.1",
     "gulp-watch": "^4.3.5",
-    "jasmine-node": "^1.14.5",
     "merge2": "^0.3.6",
-    "typescript": "^1.6.0-dev.20150915"
+    "typescript": "^1.5.3"
   },
   "files": [
-    "src/js"
+    "dist"
   ]
 }

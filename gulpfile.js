@@ -1,8 +1,3 @@
-/*
-This file in the main entry point for defining Gulp tasks and using Gulp plugins.
-Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
-*/
-
 var gulp = require('gulp');
 var watch = require('gulp-watch');
 var tsc = require('gulp-typescript');
@@ -15,7 +10,7 @@ var tsProject = tsc.createProject('src/ts/tsconfig.json', {
 });
 
 var tsSource = 'src/ts/**/*.ts';
-var jsSource = 'src/js';
+var dist = 'dist';
 
 gulp.task('ts-lint', function(){
       return gulp.src(tsSource)
@@ -28,8 +23,8 @@ gulp.task('ts-compile', function () {
         .pipe(tsc(tsProject));
 
     return merge([
-            result.js.pipe(gulp.dest(jsSource)),
-            //result.dts.pipe(gulp.dest(jsSource)),
+            result.js.pipe(gulp.dest(dist)),
+            //result.dts.pipe(gulp.dest(dist)),
         ]);
 });
 
@@ -41,7 +36,7 @@ gulp.task('ts-watch', function () {
 });
 
 gulp.task('clean', function() {
-    del(jsSource);
+    del(dist);
 });
 
 gulp.task('build', ['clean','ts-lint','ts-compile']);

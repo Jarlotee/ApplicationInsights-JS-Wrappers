@@ -1,9 +1,9 @@
-export {Level} from './insight/Level';
-export {Message} from './insight/Message';
+export {Level} from './wrappers/Level';
+export {Message} from './wrappers/Message';
 
-export {IWrapper} from './insight/IWrapper';
-export {ConsoleWrapper} from './insight/ConsoleWrapper';
-export {OnErrorWrapper} from './insight/OnErrorWrapper';
+export {IWrapper} from './wrappers/IWrapper';
+export {ConsoleWrapper} from './wrappers/ConsoleWrapper';
+export {OnErrorWrapper} from './wrappers/OnErrorWrapper';
 
-export {IAggregator} from './insight/IAggregator';
-export {ApplicationInsightsAggregator} from './insight/ApplicationInsightsAggregator';
+export {IAggregator} from './wrappers/IAggregator';
+export {ApplicationInsightsAggregator} from './wrappers/ApplicationInsightsAggregator';
