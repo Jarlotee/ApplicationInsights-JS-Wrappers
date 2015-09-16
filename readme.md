@@ -15,7 +15,7 @@ A commonjs library that extends Azure's [Application Insights] with wrapping fun
 
 var wrappers = require("ApplicationInsights-JS-Wrappers");
 
-/* Application Insights Snippt w/ your api key */
+/* Application Insights Snippet with your api key */
 
 //Create an ApplicationInsightAggregator and pass in your initialized appInsights container
 var aggregator = new wrappers.ApplicationInsightsAggregator(window.appInsights, 5);
@@ -30,7 +30,7 @@ window.appInsightsAggregator = aggregator;
 
 > Options 
 
-* Insight Aggregator takes an optional verbosity parameter (defaults to error)
+* The aggregator takes an optional verbosity parameter (defaults to error)
  * See [Level] for more details
 * All wrappers can take an optional parameter to rebroadcast the wrapped event, (default to false)
 
