@@ -18,13 +18,13 @@ var wrappers = require("ApplicationInsights-JS-Wrappers");
 /* Application Insights Snippt w/ your api key */
 
 //Create an ApplicationInsightAggregator and pass in your initialized appInsights container
-var insightAggregator = new wrappers.ApplicationInsightsAggregator(window.appInsights, 5);
+var aggregator = new wrappers.ApplicationInsightsAggregator(window.appInsights, 5);
 
 //Append wrappers default or custom wrappers
-insight.init([new wrappers.ConsoleWrapper(true), new wrappers.OnErrorWrapper()]);
+aggregator.init([new wrappers.ConsoleWrapper(true), new wrappers.OnErrorWrapper()]);
 
 //Save for later reuse
-window.insightjs = insight;
+window.appInsightsAggregator = aggregator;
 
 ```
 
@@ -43,5 +43,5 @@ window.insightjs = insight;
 MIT
 
 [Application Insights]:https://github.com/Microsoft/ApplicationInsights-JS
-[Level]:
+[Level]:https://github.com/Jarlotee/ApplicationInsights-JS-Wrappers/blob/master/src/ts/wrappers/Level.ts
 
