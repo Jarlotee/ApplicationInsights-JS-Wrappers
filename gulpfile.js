@@ -29,7 +29,7 @@ gulp.task('ts-compile', function () {
 
     return merge([
             result.js.pipe(gulp.dest(jsSource)),
-            result.dts.pipe(gulp.dest(jsSource)),
+            //result.dts.pipe(gulp.dest(jsSource)),
         ]);
 });
 
