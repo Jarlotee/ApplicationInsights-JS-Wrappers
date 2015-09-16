@@ -231,5 +231,5 @@ $RECYCLE.BIN/
 *.lnk
 
 
-# insightjs
-src/js
+# custom
+dist
