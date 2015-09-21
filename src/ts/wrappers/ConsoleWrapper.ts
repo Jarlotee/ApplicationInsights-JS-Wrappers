@@ -88,7 +88,7 @@ class ConsoleWrapper implements IWrapper {
 				level--;
 			}
 
-			this._console[level].bind(console)(message, optionalParams);
+			this._console[level].bind(console)(message);
 		}
 
 	}
