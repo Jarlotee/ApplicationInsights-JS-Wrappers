@@ -1,5 +1,5 @@
 {
-  "name": "ApplicationInsights-JS-Wrappers",
+  "name": "applicationinsights-js-wrappers",
   "version": "0.1.0",
   "main": "dist/index.js",
   "description": "window.onerror, console and functions wrappers for ApplicationInsights-JS",
