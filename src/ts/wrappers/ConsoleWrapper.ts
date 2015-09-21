@@ -61,14 +61,36 @@ class ConsoleWrapper implements IWrapper {
 	}
 
 	private handle(level: Level, message?: any, ...optionalParams: any[]) {
+
+		if (typeof message === 'object') {
+			message = JSON.stringify(message);
+		}
+
+		if (optionalParams.length > 0) {
+			for (var i = 0; i < optionalParams.length; i++) {
+				var e = optionalParams[i];
+				if (e.length > 0) {
+					for (var j = 0; j < e.length; j++) {
+						var value = e[j];
+						if (typeof e[j] === 'object') {
+							value = JSON.stringify(e[j]);
+						}
+						message += ' ' + value;
+					}
+				}
+			}
+		}
+
 		this._handler(new Message(level, message));
+
 		if (this._rethrow) {
 			while (this._console[level] === undefined && level > 1) {
 				level--;
 			}
 
-			this._console[level].bind(console)(message);
+			this._console[level].bind(console)(message, optionalParams);
 		}
+
 	}
 
 	private handleLog(message?: any, ...optionalParams: any[]): void {
