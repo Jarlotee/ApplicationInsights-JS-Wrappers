@@ -88,9 +88,12 @@ class ConsoleWrapper implements IWrapper {
 				level--;
 			}
 
-			this._console[level].bind(console)(message);
+			if ('bind' in this._console[level]) {
+				this._console[level].bind(console)(message);
+			} else {
+				Function.prototype.bind(this._console[level], console)(message);
+			}
 		}
-
 	}
 
 	private handleLog(message?: any, ...optionalParams: any[]): void {
