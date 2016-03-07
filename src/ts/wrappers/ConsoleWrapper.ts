@@ -81,7 +81,10 @@ class ConsoleWrapper implements IWrapper {
 			}
 		}
 
-		this._handler(new Message(level, message));
+		//Do not send App Insights messages back up, they cause an infinite loop.
+		if (message.substring(0, 3) !== 'AI:') {
+			this._handler(new Message(level, message));
+        }
 
 		if (this._rethrow) {
 			while (this._console[level] === undefined && level > 1) {
