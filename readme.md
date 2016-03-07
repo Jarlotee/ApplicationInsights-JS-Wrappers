@@ -36,7 +36,9 @@ window.appInsightsAggregator = aggregator;
 
 ### Change Log
 0.1.0 - Initial release
+
 0.1.1 - Fixes a IE9 console binding error
+
 0.1.2 - Fixes an infinite loop related to application insights generated console messages
 
 ### Version
