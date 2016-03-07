@@ -34,10 +34,13 @@ window.appInsightsAggregator = aggregator;
  * See [Level] for more details
 * All wrappers can take an optional parameter to rebroadcast the wrapped event, (default to false)
 
-
+### Change Log
+0.1.0 - Initial release
+0.1.1 - Fixes a IE9 console binding error
+0.1.2 - Fixes an infinite loop related to application insights generated console messages
 
 ### Version
-0.1.0
+0.1.2
 
 ### License
 MIT
